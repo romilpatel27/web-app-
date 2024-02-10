@@ -57,7 +57,7 @@ body {
 }
 
 .personal-info-box {
-  width: 45%; /* Adjust the width as needed */
+  width: 49.8%; /* Adjust the width as needed */
   max-width: 600px;
   background: linear-gradient(to bottom, white, rgb(45, 250, 165)); /* Add gradient background */
 
@@ -65,7 +65,7 @@ body {
   border: 1px solid #000000;
   padding: 30px;
   box-sizing: border-box; /* Ensure padding is included in the width */
-  margin-bottom: 20px; /* Add margin between boxes */
+  margin-bottom: -10px; /* Add margin between boxes */
 }
 
 .personal-info-box h2 {
