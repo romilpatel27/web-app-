@@ -1,0 +1,125 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to left, lightblue, rgb(33, 185, 245)); /* Add gradient background */
+
+}
+
+.navbar-container {
+  background-color: rgb(102, 102, 102); /* Red background for the navbar container */
+}
+
+.navbar {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around; /* Spread the items evenly */
+}
+
+.navbar a {
+  display: block;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Set the background colors for each task */
+.task1 {
+  background-color: #333; /* Dark gray for Task 1 */
+}
+
+.task2 {
+  background-color: #ccc; /* Light gray for Task 2 */
+}
+
+.task3 {
+  background-color: #333; /* Dark gray for Task 3 */
+  
+}
+
+
+
+.task-content {
+  padding: 20px;
+}
+
+.carousel-container {
+  max-width: 800px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: none;
+  width: 100%;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+/* Add styling for personal info boxes */
+.personal-info-container {
+  max-width: 800px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.personal-info-box {
+  width: 45%; /* Adjust the width as needed */
+  max-width: 600px;
+  background: linear-gradient(to bottom, white, rgb(45, 250, 165)); /* Add gradient background */
+
+  background-color: #f9f9f9;
+  border: 1px solid #000000;
+  padding: 30px;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  margin-bottom: 20px; /* Add margin between boxes */
+}
+
+.personal-info-box h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.personal-info-box p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* Additional styling for carousel and personal info sections can be added here */

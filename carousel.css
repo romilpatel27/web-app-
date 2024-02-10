@@ -1,0 +1,44 @@
+/* carousel.css */
+
+.carousel-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .carousel {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    display: none;
+    width: 100%; /* Ensure all slides take the same width */
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    transform: translateY(-50%);
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
