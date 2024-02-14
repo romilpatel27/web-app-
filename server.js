@@ -65,6 +65,6 @@ app.get('/JoinData', async (req, res) => {
 
 
 // Start the server
-app.listen(port, '192.168.3.192', () => {
-    console.log(`Server running at http://localhost:${port}`);
+app.listen(port, '192.168.3.192', () => {    
+    console.log(`Server is running at http://localhost:${port}`);
 });
