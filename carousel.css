@@ -14,8 +14,13 @@
   
   .carousel-slide {
     display: none;
-    width: 100%; /* Ensure all slides take the same width */
+    width: 100%;
+    transition: opacity 0.5s ease; /* Add transition for opacity */
   }
+  .carousel-slide.active {
+    display: block;
+    opacity: 1;
+}
   
   .carousel-slide img {
     width: 100%;
@@ -34,11 +39,34 @@
     transform: translateY(-50%);
   }
   
-  .prev {
-    left: 0;
-  }
-  
-  .next {
-    right: 0;
-  }
-  
+.carousel-control:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-80%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.prev {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.next {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.next::after {
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap; /* Prevents the text from wrapping */
+}
+
